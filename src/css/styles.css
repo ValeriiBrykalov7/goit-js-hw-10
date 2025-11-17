@@ -8,11 +8,169 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./badges.css');
+
+.iziToast-close {
+  filter: invert(1);
+}
+.input-wrap > input {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+  outline: none;
+  border: 1px solid #808080;
+  margin-right: 8px;
+}
+.input-wrap > button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #cfcfcf;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  outline: none;
+}
+.input-wrap > button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+.input-wrap > button:enabled {
+  background-color: #4e75ff;
+  color: white;
+}
+.input-wrap > button:enabled:hover {
+  background-color: #6c8cff;
+}
+.timer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 0 auto;
+}
+.timer-wrap {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.form > label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+.delay-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 344px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 16px;
+}
+.form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+
+.form > button:hover {
+  background: #6c8cff;
+}
+
+.form fieldset {
+  width: 360px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.form fieldset legend {
+  font-size: 16px;
+  margin-left: -140px;
+}
+
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.form input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4e5af7;
+  cursor: pointer;
+}
+
+.form fieldset label:hover {
+  color: #2c2f33;
+}
